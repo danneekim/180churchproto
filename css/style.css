@@ -1,0 +1,1127 @@
+*{
+	margin: 0;
+}
+/*this is the background for the landing page*/
+
+#audio{
+	margin-top: 70px;
+}
+	
+#mainclocker{
+	padding-top: 25px;
+}
+
+.clock{
+	border-top: 5px solid black;
+	text-align: center;
+	font-size: 42pt;
+	font-family: Orbitron, sans-serif;
+	color: white;
+	 animation: appear1 6s ease-in-out 0s;
+   	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+
+}
+
+.quote{
+	font-size: 30pt;
+	text-align: center;
+	color: white;
+	animation: appear1 9s ease-in-out 0s;
+   	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+
+.quote1{
+	font-size: 30pt;
+	text-align: center;
+	color: white;
+	border-bottom: solid black 5px;
+	animation: appear1 12s ease-in-out 0s;
+   	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+
+@keyframes appear1{
+	0%{
+
+	}
+
+	100%{
+		display: block;
+		background-color: rgba(0,125,0,0.8);
+	}
+
+}
+
+
+#landwelcomebg{
+	border: 5px solid white;
+	border-radius: 35%;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 20px;
+	opacity: 0;
+	display: block;
+	margin-top: 8vh;
+   	margin-left: auto;
+   	margin-right: auto;
+   	height: 40vh;
+   	width: 38%;
+   	background-color: rgba(255, 163, 102, .95);
+   	animation: fadein 10s ease-in-out 0s;
+   	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+
+@keyframes fadein{
+	0%{
+
+	}
+
+	100%{
+		display: block;
+		opacity: .95;
+
+	}
+
+}
+
+#enterbutton{
+	border: 5px solid white;
+	border-radius: 20%;
+	padding-bottom: 10px;
+	display: block;
+	margin-top: 5vh;
+   	margin-left: auto;
+   	margin-right: auto;	
+   	background-color: rgba(255, 163, 102, 0.8);
+   	animation: appear 8s ease-in-out infinite;
+   	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+
+@keyframes appear{
+	0%{
+
+	}
+
+	50%{
+		background-color: rgba(0,125,0,0.9)
+	}
+
+	100%{
+		background-color: rgba(255, 163, 102, 0.8);
+	}
+
+}
+
+
+#enterbutton:hover {
+	border: 9.5px solid grey;	
+}
+
+ /*this is the end of the background for the landing page*/
+
+/*start of container for all pages*/
+
+.container{
+	max-width: 80%;
+	margin: 0 auto;
+	font-size: 24px;
+	padding: 25px;
+	background: url("../img/finalprojecto.jpg");
+	padding-top: 200px;
+	/*background-color: rgba(255, 163, 102, 0.8);*/
+}
+/*end of container for all pages*/
+
+/* start of nav bar*/
+#navlogo{
+	overflow: hidden;
+	display: absolute;
+	position: fixed;
+	background-color: rgba(255, 163, 102, 1);
+	display: flex;
+	width: 100vw;
+	overflow: auto;
+	z-index: 3;
+	border-bottom: 5px solid black;
+	padding-bottom: 7px;
+}
+
+.logo {
+	flex:1;
+	padding-top: 10px;
+	padding-left: 50px;
+	padding-bottom: 10px;
+	animation: logo 2s ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	position: absolute;
+}
+
+
+
+@keyframes logo{
+			0%{
+				top:-100%;
+
+			}
+			20%{
+				top: -10%;
+
+			}
+			40%{
+				top: -70%;
+
+			}
+			60%{
+				top: -10%;
+			}
+				
+			80%{
+				top: -50%;
+			}
+				
+			100%{
+				top: -10%;
+				transform: rotateX(360deg);
+
+			}	
+
+		}	
+
+.nav {
+	flex: 1;
+}
+
+.nav1{
+	display: flex;
+	list-style: none;
+	justify-content:flex-end;
+	padding-right: 0px;
+}
+
+li{
+	padding: 50px 25px 0px 0px;
+}
+
+li a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Poppins' , sans-serif;
+	font-size: 15pt;
+
+}
+
+li a:hover{
+	color: brown;
+	font-weight: bold;
+}
+/*this is the end of navigation*/
+
+/*this is the bg for website background*/
+
+.homebg{
+	background-image: url('../img/homebg.jpg');
+	background-repeat: no-repeat;
+   	background-attachment: fixed;
+   	background-position: center; 
+	background-size: cover;
+	height: 100vh;
+}
+
+/*this is end of homepage background*/
+
+/*this is start of footer*/
+.footernav {
+	border: 4px solid black;
+	display: flex;
+	background-color: rgba(255, 163, 102, 0.8);
+}
+
+#footerinfo{
+	font-size: 12pt;
+	padding-left: 6.5%;
+	padding-top: .5%;
+	padding-bottom: .5%;
+	color: white;
+}
+
+.footericons{
+	height: 40px;
+	width: 40px;
+	display: inline;
+	justify-content: flex-end;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+
+.footericons:hover{
+	background-color: rgba(165,42,42, 0.7);
+}
+
+#socialmediaicons{
+	
+	padding-left: 700px;
+	padding-top: 20px;
+}
+
+/*this is end of footer*/
+
+/*this is beginning of home animation slideshow*/
+#slideshow{
+	display: flex;
+}
+
+#slideshow .homeslideshow {
+	display: none;
+	border: solid 5px rgba(165,42,42, 0.7);
+	height: 65vh;
+	justify-content: center;
+	flex: 9;	
+}
+
+.button{
+	border: 4px solid brown;
+	color: brown;
+	font-size: 70pt;
+	opacity: 0;
+	flex:1;
+	height: 418px;
+}
+/*this is the end of the animation slideshow*/
+
+
+/*start of homepage blurb about 180church*/
+.blurb{
+	display: absolute;
+	position: relative;
+	margin-top: 3%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 5px solid black;
+	color: black;
+	background-color: white;
+	opacity: .8;
+	font-family: 'Poppins' , sans-serif;
+	font-size: 13pt;
+	display: flex;
+}
+
+.blurb h2{
+	position: relative;
+	border-style: 5px solid black;
+	padding-top: 2.5%;
+	padding-left: 13%;
+	padding-right: 15%;
+	text-align: center;
+}
+
+.blurb p{
+	padding: 5px;
+}
+/*end of homepage blurb about 180church*/
+
+
+/*start of page title*/
+.pagetitle{
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	border: solid black 4px;
+	padding-top: 95px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 5px;
+	font-family: 'Poppins' , sans-serif;
+	font-size: 12pt;
+	opacity: 0;
+	width: 200px;
+	background-color: white;
+	animation: dannee 4s  ease-in-out 0s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	transition: 2s;
+	top: 0;
+
+}
+
+		@keyframes dannee{
+			0%{
+				height: 0px;
+				opacity: 0;
+				background-color: white;
+
+			}
+				
+			100%{
+				height: 80px;
+				opacity: 1;
+				background-color: rgba(165,42,42, 0.7);
+				display: block;
+			}	
+
+		}	
+/*end of page title*/
+
+
+/*start of times & location*/
+.parentlocation{
+	display: flex;
+}
+
+.location{
+	flex: 1.5;
+	align-items: center;
+	justify-content: center;	
+	font-size: 18pt;
+	border-top: solid 5px rgba(0,0,0,1);
+	border-left: solid 5px rgba(0,0,0,1);
+	border-bottom: solid 5px rgba(0,0,0,1);
+	color: black;
+	background-color: white;
+	
+	padding: 35px;
+}
+
+#googlemap{
+	flex:1;
+}
+/*end of times & location*/
+
+/*start of watch*/
+
+.datevideo{
+	font-size: 20pt;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	color: black;
+	display: flex;
+	justify-content: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 8px solid rgb(165,42,42);
+	margin-top: 15px;
+	background-color: white;
+	opacity: .75;
+
+}
+
+.sermonvideo{
+	border: solid 10px rgba(255, 163, 102, 0.8);
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	flex: 3;
+}
+
+.blurbvideo{
+	display: flex;
+	flex: 1;
+	font-size: 13pt;
+	color: black;
+	background-color: white;
+	opacity: .75;
+	border: solid 3px black;
+	align-items: center;
+	padding-left: 2.5%;
+	padding-right: 2.5%;	
+}
+
+
+/*end of watch*/
+
+
+/*this is the parallax effect for sg.html*/
+.parallaxborder{
+	border: solid 5px black;
+	width: 100%;
+}
+
+.parallax{
+    padding-top: 200px;
+    background: transparent;
+    background-size: cover;
+    height: 30vh;
+}
+
+.parallax2{
+    padding-top: 200px;
+    background: transparent;
+    background-size: cover;
+    height: 30vh;
+}
+
+.blurb2{
+	display: absolute;
+	position: relative;
+	border: solid black 5px;
+	color: black;
+	background-color: white;
+	opacity: .8;
+	font-family: 'Poppins' , sans-serif;
+	font-size: 13pt;
+	display: flex;	
+	justify-content: center;
+	padding: 2.5%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.sginfo{
+	list-style: none;
+}
+
+.sginfo li{
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*end of parallax for sg.html*/
+
+/*this is start of resources.html*/
+#rsrccontainer{
+	overflow: auto;
+	border: solid black 6px;
+	height: 380px;
+	background-color: rgba(165,42,42, 0.2);
+}
+
+#rsrcimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 425px;	
+	margin: 0 auto;
+}
+
+#resourcetable{
+	background-color: rgba(255,255,255,0.9);
+	border: solid black 5px;
+	font-family: 'Poppins', sans-serif;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#resourcetable th{
+	font-size: 12pt;
+	border-top: dotted brown 2px;
+	border-bottom: dotted brown 2px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#resourcetable tr{
+	margin: 0 auto;
+	padding: 0;
+	font-size: 10pt;
+}
+
+#resourcetable td{
+	margin: 0 auto;
+	padding: 0;
+	font-size: 14pt;
+}
+
+.rsrctbheader a{
+	padding: 0;
+	text-decoration: none;
+	color: black;
+}
+
+.rsrctbheader:hover{
+	background-color: rgba(165,42,42,0.4);
+}
+
+/*end of resources.html*/
+
+/*start of about.html*/
+
+/*specific about container used for about.html*/
+#aboutcontainer{
+	max-width: 85%;
+	margin: 0 auto;
+	font-size: 24px;
+	padding: 25px;
+	background: url("../img/finalprojecto.jpg");
+	padding-top: 200px;
+	display: flex;
+} 
+
+.babycontainer{
+	border: solid black 5px;
+	height: 380px;
+	flex: 1;
+	overflow: auto;
+	background-color: white;
+	opacity: .75;
+	font-family: 'Poppins', sans-serif;	
+}
+
+.babycontainer h3{
+	text-align: center;	
+	padding-top: 10px;
+	font-size: 36pt;
+}
+
+.babycontainer ol{
+	display: flex;
+	flex-direction: column;
+}
+
+.babycontainer li{
+	padding-top: 10px;
+	font-size: 12pt
+}
+
+.babycontainer p{
+	padding: 10px;
+	font-size: 12pt;
+}
+
+/*staff container div*/
+.babycontainer2{
+	border-top: solid black 5px;
+	border-right: solid black 5px;
+	border-bottom: solid black 5px;
+	height: 380px;
+	flex: 1;
+	overflow: auto;
+	background-color: rgba(255,255,255, 0.75);
+	font-family: 'Poppins', sans-serif;	
+}
+
+.babycontainer2 h3{
+	text-align: center;	
+	font-size: 36pt;
+	border
+}
+
+.staffphoto{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*this is staff photo section*/
+.drsamdkim{
+	height: 200px;
+	width: 250px;
+	border: solid brown 5px;
+	border-radius: 10px;
+}
+
+#one img:hover{
+	width: 265px;
+	height: 215px;
+}
+
+.pastorlydiakim{
+	height: 200px;
+	width: 250px;
+	border: solid brown 5px;
+	border-radius: 10px;
+}
+
+#two img:hover{
+	width: 265px;
+	height: 215px;
+}
+
+.pastorbillykim{
+	height: 200px;
+	width: 250px;
+	border: solid brown 5px;
+	border-radius: 10px;
+}
+
+#three img:hover{
+	width: 265px;
+	height: 215px;
+}
+
+.henrykim{
+	height: 200px;
+	width: 250px;
+	border: solid brown 5px;
+	border-radius: 10px;
+}
+
+#four img:hover{
+	width: 265px;
+	height: 215px;
+}
+
+.stustill{
+	height: 200px;
+	width: 250px;
+	border: solid brown 5px;
+	border-radius: 10px;
+}
+
+#five img:hover{
+	width: 265px;
+	height: 215px;
+}
+
+.charlesbennett{
+	height: 200px;
+	width: 250px;
+	border: solid brown 5px;
+	border-radius: 10px;
+}
+
+#six img:hover{
+	width: 265px;
+	height: 215px;
+}
+
+.sarahbennett{
+	height: 200px;
+	width: 250px;
+	border: solid brown 5px;
+	border-radius: 10px;	
+}
+
+#seven img:hover{
+	width: 265px;
+	height: 215px;
+}
+
+/*this is modal section*/
+
+.bg-modal{
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content{
+	height: 300px;
+	width: 400px;
+	background-color: rgba(255,255,255,1);
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	overflow: auto;
+}
+
+.close-modal{
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer; 
+	/*cursor:pointer allows the pointer to become a click mouse icon*/
+}
+
+.modalcontentformat{
+	text-align: left;
+}
+
+.modalcontentformat li{
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	border: solid black 3px;
+}
+
+.modalcontentlink{
+	text-decoration: none;
+	color: blue;
+}
+
+.modalcontentlink:hover{
+	color: brown;
+	font-size: 14pt;
+}
+
+.modalcontentlist li{
+	padding: 0;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/*this is modal for pastor lydia*/
+
+.bg-modal2{
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content2{
+	height: 300px;
+	width: 400px;
+	background-color: rgba(255,255,255,1);
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	overflow: auto;
+}
+
+.close-modal2{
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer; 
+	/*cursor:pointer allows the pointer to become a click mouse icon*/
+}
+
+.modalcontentformat2{
+	text-align: left;
+}
+
+.modalcontentformat2 li{
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	border: solid black 3px;
+}
+
+.modalcontentlink2{
+	text-decoration: none;
+	color: blue;
+}
+
+.modalcontentlink2:hover{
+	color: brown;
+}
+
+.modalcontentlist2 li{
+	padding: 0;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/*this is modal for pastor billy kim*/
+
+.bg-modal3{
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content3{
+	height: 300px;
+	width: 400px;
+	background-color: rgba(255,255,255,1);
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	overflow: auto;
+}
+
+.close-modal3{
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer; 
+	/*cursor:pointer allows the pointer to become a click mouse icon*/
+}
+
+.modalcontentformat3{
+	text-align: left;
+}
+
+.modalcontentformat3 li{
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	border: solid black 3px;
+}
+
+.modalcontentlink3{
+	text-decoration: none;
+	color: blue;
+}
+
+.modalcontentlink3:hover{
+	color: brown;
+	font-size: 14pt;
+}
+
+.modalcontentlist3 li{
+	padding: 0;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/*this is modal for henry kim*/
+
+.bg-modal4{
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content4{
+	height: 300px;
+	width: 400px;
+	background-color: rgba(255,255,255,1);
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	overflow: auto;
+}
+
+.close-modal4{
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer; 
+	/*cursor:pointer allows the pointer to become a click mouse icon*/
+}
+
+.modalcontentformat4{
+	text-align: left;
+}
+
+.modalcontentformat4 li{
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	border: solid black 3px;
+}
+
+.modalcontentlink4{
+	text-decoration: none;
+	color: blue;
+}
+
+.modalcontentlink4:hover{
+	color: brown;
+	font-size: 14pt;
+}
+
+.modalcontentlist4 li{
+	padding: 0;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/*this is modal for Stu Still*/
+.bg-modal5{
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content5{
+	height: 300px;
+	width: 400px;
+	background-color: rgba(255,255,255,1);
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	overflow: auto;
+}
+
+.close-modal5{
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer; 
+	/*cursor:pointer allows the pointer to become a click mouse icon*/
+}
+
+.modalcontentformat5{
+	text-align: left;
+}
+
+.modalcontentformat5 li{
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	border: solid black 3px;
+}
+
+.modalcontentlink5{
+	text-decoration: none;
+	color: blue;
+}
+
+.modalcontentlink5:hover{
+	color: brown;
+	font-size: 14pt;
+}
+
+.modalcontentlist5 li{
+	padding: 0;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/*this is modal for Charles Bennett*/
+
+.bg-modal6{
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content6{
+	height: 300px;
+	width: 400px;
+	background-color: rgba(255,255,255,1);
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	overflow: auto;
+}
+
+.close-modal6{
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer; 
+	/*cursor:pointer allows the pointer to become a click mouse icon*/
+}
+
+.modalcontentformat6{
+	text-align: left;
+}
+
+.modalcontentformat6 li{
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	border: solid black 3px;
+}
+
+.modalcontentlink6{
+	text-decoration: none;
+	color: blue;
+}
+
+.modalcontentlink6:hover{
+	color: brown;
+	font-size: 14pt;
+}
+
+.modalcontentlist6 li{
+	padding: 0;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/*this is modal for Sarah Bennett*/
+
+.bg-modal7{
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content7{
+	height: 300px;
+	width: 400px;
+	background-color: rgba(255,255,255,1);
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	overflow: auto;
+}
+
+.close-modal7{
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer; 
+	/*cursor:pointer allows the pointer to become a click mouse icon*/
+}
+
+.modalcontentformat7{
+	text-align: left;
+}
+
+.modalcontentformat7 li{
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	border: solid black 3px;
+}
+
+.modalcontentlink7{
+	text-decoration: none;
+	color: blue;
+}
+
+.modalcontentlink7:hover{
+	color: brown;
+	font-size: 14pt;
+}
+
+.modalcontentlist7 li{
+	padding: 0;
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
